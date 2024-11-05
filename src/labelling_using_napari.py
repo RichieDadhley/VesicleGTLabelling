@@ -72,7 +72,7 @@ if __name__ == '__main__':
             else:
                 raise FileExistsError('Neg data location provided not suitable. Please try again.')
     
-    @magicgui(call_button='Save centres')
+    @magicgui(save_location ={'mode': 'd'}, call_button='Save centres')
     def save_centres(save_location = pathlib.Path('save/location')):
 
         pos = viewer.layers['pos']
